@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Just-in-Kees - Independent iOS and Android mobile app development services in the Netherlands. Professional freelance mobile application developer.">
-    <title>Just-in-Kees - Mobile App Development</title>
+    <meta name="description" content="Kees van Ginkel - Independent Software Engineer">
+    <title>Kees van Ginkel</title>
     <style>
         * {
             margin: 0;
@@ -13,117 +13,173 @@
         }
         
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f5f5f5;
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', 'Inter', system-ui, sans-serif;
+            line-height: 1.7;
+            color: #1C1C1C;
+            background-color: #F5F3EF;
+            font-size: 16px;
         }
         
         .container {
-            max-width: 800px;
+            max-width: 680px;
             margin: 0 auto;
-            padding: 40px 20px;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-        
-        .card {
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            padding: 50px 40px;
-            text-align: center;
+            padding: 80px 32px;
         }
         
         h1 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-            color: #2c3e50;
+            font-size: 2.75rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            margin-bottom: 12px;
+            color: #1C1C1C;
         }
         
-        .tagline {
-            font-size: 1.2em;
-            color: #555;
+        .title {
+            font-size: 1.125rem;
+            font-weight: 400;
+            color: #4A4A4A;
+            margin-bottom: 48px;
+        }
+        
+        .positioning {
+            font-size: 1.125rem;
+            line-height: 1.8;
+            margin-bottom: 72px;
+            color: #2A2A2A;
+        }
+        
+        h2 {
+            font-size: 0.875rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: #6A6A6A;
+            margin-bottom: 32px;
+            margin-top: 72px;
+        }
+        
+        .work-item {
             margin-bottom: 40px;
         }
         
-        .info-section {
-            margin: 30px 0;
-            padding: 20px 0;
-            border-top: 1px solid #e0e0e0;
-        }
-        
-        .info-item {
-            margin: 15px 0;
-            font-size: 1.1em;
-        }
-        
-        .label {
+        .work-item h3 {
+            font-size: 1.125rem;
             font-weight: 600;
-            color: #2c3e50;
-            display: inline-block;
-            min-width: 100px;
+            margin-bottom: 8px;
+            color: #1C1C1C;
         }
         
-        .value {
-            color: #555;
+        .work-item p {
+            font-size: 1rem;
+            line-height: 1.7;
+            color: #3A3A3A;
         }
         
-        a {
-            color: #3498db;
-            text-decoration: none;
-        }
-        
-        a:hover {
-            text-decoration: underline;
-        }
-        
-        a:focus-visible {
-            outline: 2px solid #3498db;
-            outline-offset: 2px;
-        }
-        
-        .footer {
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid #e0e0e0;
-            color: #888;
+        .work-item code {
+            font-family: 'SF Mono', 'Monaco', 'Consolas', monospace;
             font-size: 0.9em;
+            color: #2A2A2A;
         }
         
-        @media (max-width: 600px) {
-            h1 {
-                font-size: 2em;
+        .principles {
+            margin-bottom: 72px;
+        }
+        
+        .principles p {
+            font-size: 1rem;
+            line-height: 2;
+            color: #2A2A2A;
+        }
+        
+        .contact {
+            margin-top: 72px;
+        }
+        
+        .contact a {
+            display: inline-block;
+            margin-right: 32px;
+            font-size: 1rem;
+            color: #2C5F5D;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.15s ease;
+        }
+        
+        .contact a:hover {
+            border-bottom-color: #2C5F5D;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 60px 24px;
             }
             
-            .card {
-                padding: 30px 20px;
+            h1 {
+                font-size: 2.25rem;
+            }
+            
+            .title {
+                font-size: 1rem;
+                margin-bottom: 40px;
+            }
+            
+            .positioning {
+                font-size: 1rem;
+                margin-bottom: 60px;
+            }
+            
+            h2 {
+                margin-top: 60px;
+                margin-bottom: 24px;
+            }
+            
+            .contact a {
+                display: block;
+                margin-right: 0;
+                margin-bottom: 16px;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="card">
-            <h1>Just-in-Kees</h1>
-            <p class="tagline">Independent iOS &amp; Android app development</p>
-            
-            <div class="info-section">
-                <div class="info-item">
-                    <span class="label">Email:</span>
-                    <span class="value"><a href="mailto:kbincase@gmail.com" aria-label="Contact email">kbincase@gmail.com</a></span>
-                </div>
-                <div class="info-item">
-                    <span class="label">Location:</span>
-                    <span class="value">Netherlands</span>
-                </div>
-            </div>
-            
-            <div class="footer">
-                <p>&copy; 2026 Just-in-Kees. All rights reserved. | <a href="privacy.html">Privacy Policy</a></p>
-            </div>
+        <h1>Kees van Ginkel</h1>
+        <p class="title">Independent Software Engineer</p>
+        
+        <div class="positioning">
+            <p>I build reliable systems for mobile and web platforms. My work focuses on clarity, maintainability, and solving problems at the right level of abstraction. I work independently with companies that value technical precision over volume.</p>
+        </div>
+        
+        <h2>Selected Work</h2>
+        
+        <div class="work-item">
+            <h3>iOS and Android Applications</h3>
+            <p>Native mobile applications using <code>Swift</code> and <code>Kotlin</code>. Architecture patterns that support long-term maintenance and feature extension without structural debt.</p>
+        </div>
+        
+        <div class="work-item">
+            <h3>Backend Systems Integration</h3>
+            <p>RESTful and GraphQL service layers. Authentication flows, data synchronization, and offline-capable mobile architectures that handle edge cases gracefully.</p>
+        </div>
+        
+        <div class="work-item">
+            <h3>Technical Architecture</h3>
+            <p>System design for mobile platforms. Evaluating trade-offs between complexity and capability. Documentation that supports handoff and future development.</p>
+        </div>
+        
+        <h2>Principles</h2>
+        
+        <div class="principles">
+            <p>Clarity over cleverness</p>
+            <p>Sustainable pace over heroic effort</p>
+            <p>Direct communication without ceremony</p>
+        </div>
+        
+        <h2>Contact</h2>
+        
+        <div class="contact">
+            <a href="mailto:kbincase@gmail.com">kbincase@gmail.com</a>
+            <a href="https://github.com/468910" target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
     </div>
 </body>
