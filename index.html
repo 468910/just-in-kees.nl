@@ -22,10 +22,30 @@
             -moz-osx-font-smoothing: grayscale;
         }
         
+        .section-wrapper {
+            border-top: 1px solid #232323;
+        }
+        
+        .section-wrapper:first-child {
+            border-top: none;
+        }
+        
+        .section-wrapper.sage-surface {
+            background-color: #171C1B;
+        }
+        
         .container {
             max-width: 720px;
             margin: 0 auto;
             padding: 96px 32px;
+        }
+        
+        section {
+            padding: 24px 0;
+        }
+        
+        section:first-child {
+            padding-top: 0;
         }
         
         h1 {
@@ -54,19 +74,7 @@
             font-size: 1.125rem;
             line-height: 1.8;
             color: #E6E6E6;
-            margin-bottom: 96px;
-        }
-        
-        section {
-            margin-bottom: 112px;
-        }
-        
-        .sage-surface {
-            background-color: #1A2321;
-            margin-left: -32px;
-            margin-right: -32px;
-            padding: 56px 32px;
-            border-radius: 2px;
+            margin-bottom: 48px;
         }
         
         h2 {
@@ -161,72 +169,78 @@
             }
             
             .positioning {
-                margin-bottom: 80px;
-            }
-            
-            section {
-                margin-bottom: 96px;
-            }
-            
-            .sage-surface {
-                margin-left: -24px;
-                margin-right: -24px;
-                padding: 40px 24px;
+                margin-bottom: 32px;
             }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Kees Boekestijn</h1>
-        <p class="title">Independent Software Engineer</p>
-        <p class="focus-line">Currently focused on distributed systems and operational architecture</p>
-        
-        <p class="positioning">
-            I build software systems that operate under constraint. Work spans infrastructure, mobile platforms, and distributed architectures with focus on technical clarity and operational durability.
-        </p>
-        
-        <section class="sage-surface">
-            <h2>Selected Work</h2>
-            
-            <div class="work-item">
-                <div class="work-title">Cross-platform mobile infrastructure</div>
-                <div class="work-description">
-                    Build and deployment systems for iOS and Android applications. Automated testing pipeline with staged release mechanics. Focus on reproducible builds and deployment confidence.
+    <div class="section-wrapper">
+        <div class="container">
+            <section>
+                <h1>Kees Boekestijn</h1>
+                <p class="title">Independent Software Engineer</p>
+                <p class="focus-line">Currently focused on distributed systems and operational architecture</p>
+                
+                <p class="positioning">
+                    I build software systems that operate under constraint. Work spans infrastructure, mobile platforms, and distributed architectures with focus on technical clarity and operational durability.
+                </p>
+            </section>
+        </div>
+    </div>
+    
+    <div class="section-wrapper sage-surface">
+        <div class="container">
+            <section>
+                <h2>Selected Work</h2>
+                
+                <div class="work-item">
+                    <div class="work-title">Cross-platform mobile infrastructure</div>
+                    <div class="work-description">
+                        Build and deployment systems for iOS and Android applications. Automated testing pipeline with staged release mechanics. Focus on reproducible builds and deployment confidence.
+                    </div>
                 </div>
-            </div>
-            
-            <div class="work-item">
-                <div class="work-title">Offline-first synchronization</div>
-                <div class="work-description">
-                    Data sync architecture for mobile apps with conflict resolution and eventual consistency. Handles network partition and maintains state integrity across distributed clients.
+                
+                <div class="work-item">
+                    <div class="work-title">Offline-first synchronization</div>
+                    <div class="work-description">
+                        Data sync architecture for mobile apps with conflict resolution and eventual consistency. Handles network partition and maintains state integrity across distributed clients.
+                    </div>
                 </div>
-            </div>
-            
-            <div class="work-item">
-                <div class="work-title">Service gateway architecture</div>
-                <div class="work-description">
-                    Decomposition of monolithic REST services into event-driven components. Emphasis on observability through structured logging and request tracing.
+                
+                <div class="work-item">
+                    <div class="work-title">Service gateway architecture</div>
+                    <div class="work-description">
+                        Decomposition of monolithic REST services into event-driven components. Emphasis on observability through structured logging and request tracing.
+                    </div>
                 </div>
-            </div>
-        </section>
-        
-        <section>
-            <h2>Principles</h2>
-            <ul class="principles-list">
-                <li>Simple architectures that others can understand and maintain</li>
-                <li>Operational clarity and debugging before optimization</li>
-                <li>Systems that degrade gracefully under failure</li>
-            </ul>
-        </section>
-        
-        <section class="sage-surface">
-            <h2>Contact</h2>
-            <div class="contact-links">
-                <a href="mailto:kbincase@gmail.com">kbincase@gmail.com</a>
-                <a href="https://github.com/468910" target="_blank" rel="noopener noreferrer">GitHub</a>
-            </div>
-        </section>
+            </section>
+        </div>
+    </div>
+    
+    <div class="section-wrapper">
+        <div class="container">
+            <section>
+                <h2>Principles</h2>
+                <ul class="principles-list">
+                    <li>Simple architectures that others can understand and maintain</li>
+                    <li>Operational clarity and debugging before optimization</li>
+                    <li>Systems that degrade gracefully under failure</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+    
+    <div class="section-wrapper sage-surface">
+        <div class="container">
+            <section>
+                <h2>Contact</h2>
+                <div class="contact-links">
+                    <a href="mailto:kbincase@gmail.com">kbincase@gmail.com</a>
+                    <a href="https://github.com/468910" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </div>
+            </section>
+        </div>
     </div>
 </body>
 </html>
