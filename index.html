@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Kees Boekestijn - Independent Software Engineer">
-    <title>Kees Boekestijn</title>
+    <meta name="description" content="Kees Bank - Independent Systems Engineer">
+    <title>Kees Bank</title>
     <style>
         * {
             margin: 0;
@@ -13,81 +13,80 @@
         }
         
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
-            line-height: 1.8;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
             color: #E6E6E6;
             background-color: #141414;
-            font-size: 16px;
+            font-size: 15px;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
         }
         
-        .section-wrapper {
-            border-top: 1px solid #232323;
-        }
-        
-        .section-wrapper:first-child {
-            border-top: none;
-        }
-        
-        .section-wrapper.sage-surface {
-            background-color: #171C1B;
-        }
-        
         .container {
-            max-width: 720px;
+            max-width: 700px;
             margin: 0 auto;
-            padding: 96px 32px;
+            padding: 64px 32px;
+        }
+        
+        .header {
+            font-family: 'Courier New', 'Monaco', monospace;
+            font-size: 0.8125rem;
+            color: #A8A8A8;
+            margin-bottom: 48px;
+            line-height: 1.6;
+        }
+        
+        .header .name {
+            color: #E6E6E6;
+            font-weight: 500;
         }
         
         section {
-            padding: 24px 0;
+            padding: 32px 0;
+            border-top: 1px solid #1E1E1E;
         }
         
-        section:first-child {
+        section:first-of-type {
+            border-top: none;
             padding-top: 0;
         }
         
-        h1 {
-            font-size: 2.5rem;
-            font-weight: 600;
-            color: #E6E6E6;
-            margin-bottom: 8px;
-            letter-spacing: -0.02em;
-        }
-        
-        .title {
-            font-size: 1.125rem;
-            color: #A8A8A8;
-            margin-bottom: 16px;
-            font-weight: 400;
-        }
-        
-        .focus-line {
-            font-size: 0.9375rem;
-            color: #888888;
-            margin-bottom: 80px;
-            font-style: italic;
-        }
-        
-        .positioning {
-            font-size: 1.125rem;
-            line-height: 1.8;
-            color: #E6E6E6;
-            margin-bottom: 48px;
-        }
-        
         h2 {
-            font-size: 0.875rem;
+            font-family: 'Courier New', 'Monaco', monospace;
+            font-size: 0.8125rem;
             font-weight: 600;
             color: #E6E6E6;
-            margin-bottom: 40px;
+            margin-bottom: 20px;
             text-transform: uppercase;
             letter-spacing: 0.05em;
         }
         
+        .now-list {
+            list-style: none;
+        }
+        
+        .now-list li {
+            font-size: 0.9375rem;
+            line-height: 1.6;
+            color: #A8A8A8;
+            margin-bottom: 12px;
+            padding-left: 16px;
+            position: relative;
+        }
+        
+        .now-list li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #555555;
+        }
+        
+        .now-list li:last-child {
+            margin-bottom: 0;
+        }
+        
         .work-item {
-            margin-bottom: 56px;
+            margin-bottom: 32px;
         }
         
         .work-item:last-child {
@@ -95,16 +94,35 @@
         }
         
         .work-title {
-            font-size: 1.125rem;
-            font-weight: 500;
+            font-family: 'Courier New', 'Monaco', monospace;
+            font-size: 0.875rem;
+            font-weight: 600;
             color: #E6E6E6;
-            margin-bottom: 12px;
+            margin-bottom: 8px;
         }
         
-        .work-description {
-            font-size: 1rem;
-            line-height: 1.8;
+        .work-list {
+            list-style: none;
+        }
+        
+        .work-list li {
+            font-size: 0.9375rem;
+            line-height: 1.6;
             color: #A8A8A8;
+            margin-bottom: 6px;
+            padding-left: 16px;
+            position: relative;
+        }
+        
+        .work-list li:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #555555;
+        }
+        
+        .work-list li:last-child {
+            margin-bottom: 0;
         }
         
         .principles-list {
@@ -112,16 +130,16 @@
         }
         
         .principles-list li {
-            font-size: 1rem;
-            line-height: 1.8;
+            font-size: 0.9375rem;
+            line-height: 1.6;
             color: #A8A8A8;
-            margin-bottom: 28px;
-            padding-left: 24px;
+            margin-bottom: 12px;
+            padding-left: 16px;
             position: relative;
         }
         
         .principles-list li:before {
-            content: "—";
+            content: "•";
             position: absolute;
             left: 0;
             color: #555555;
@@ -133,11 +151,12 @@
         
         .contact-links {
             display: flex;
-            gap: 32px;
+            gap: 24px;
+            flex-wrap: wrap;
         }
         
         .contact-links a {
-            font-size: 1rem;
+            font-size: 0.9375rem;
             color: #1F6F6B;
             text-decoration: none;
         }
@@ -148,99 +167,94 @@
         
         .contact-links a:focus-visible {
             outline: 1px solid #1F6F6B;
-            outline-offset: 4px;
+            outline-offset: 2px;
         }
         
         @media (max-width: 768px) {
             .container {
-                padding: 72px 24px;
+                padding: 48px 24px;
             }
             
-            h1 {
-                font-size: 2rem;
+            .header {
+                margin-bottom: 36px;
             }
             
-            .title {
-                margin-bottom: 12px;
-            }
-            
-            .focus-line {
-                margin-bottom: 64px;
-            }
-            
-            .positioning {
-                margin-bottom: 32px;
+            section {
+                padding: 24px 0;
             }
         }
     </style>
 </head>
 <body>
-    <div class="section-wrapper">
-        <div class="container">
-            <section>
-                <h1>Kees Boekestijn</h1>
-                <p class="title">Independent Software Engineer</p>
-                <p class="focus-line">Currently focused on distributed systems and operational architecture</p>
-                
-                <p class="positioning">
-                    I build software systems that operate under constraint. Work spans infrastructure, mobile platforms, and distributed architectures with focus on technical clarity and operational durability.
-                </p>
-            </section>
+    <div class="container">
+        <div class="header">
+            <div class="name">Kees Bank</div>
+            <div>Independent Systems Engineer</div>
         </div>
-    </div>
-    
-    <div class="section-wrapper sage-surface">
-        <div class="container">
-            <section>
-                <h2>Selected Work</h2>
-                
-                <div class="work-item">
-                    <div class="work-title">Cross-platform mobile infrastructure</div>
-                    <div class="work-description">
-                        Build and deployment systems for iOS and Android applications. Automated testing pipeline with staged release mechanics. Focus on reproducible builds and deployment confidence.
-                    </div>
-                </div>
-                
-                <div class="work-item">
-                    <div class="work-title">Offline-first synchronization</div>
-                    <div class="work-description">
-                        Data sync architecture for mobile apps with conflict resolution and eventual consistency. Handles network partition and maintains state integrity across distributed clients.
-                    </div>
-                </div>
-                
-                <div class="work-item">
-                    <div class="work-title">Service gateway architecture</div>
-                    <div class="work-description">
-                        Decomposition of monolithic REST services into event-driven components. Emphasis on observability through structured logging and request tracing.
-                    </div>
-                </div>
-            </section>
-        </div>
-    </div>
-    
-    <div class="section-wrapper">
-        <div class="container">
-            <section>
-                <h2>Principles</h2>
-                <ul class="principles-list">
-                    <li>Simple architectures that others can understand and maintain</li>
-                    <li>Operational clarity and debugging before optimization</li>
-                    <li>Systems that degrade gracefully under failure</li>
+        
+        <section>
+            <h2>Now</h2>
+            <ul class="now-list">
+                <li>Distributed transaction processing at scale</li>
+                <li>Event sourcing patterns for financial systems</li>
+                <li>Infrastructure automation with Terraform and Kubernetes</li>
+                <li>Database performance optimization</li>
+                <li>Zero-downtime deployment strategies</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>Work</h2>
+            
+            <div class="work-item">
+                <div class="work-title">Mobile platform infrastructure</div>
+                <ul class="work-list">
+                    <li>iOS and Android build systems with automated testing</li>
+                    <li>CI/CD pipeline: 6-week to 2-week release cycles</li>
+                    <li>Reproducible builds across 3 environments</li>
+                    <li>Deployment automation reduced manual steps by 80%</li>
                 </ul>
-            </section>
-        </div>
-    </div>
-    
-    <div class="section-wrapper sage-surface">
-        <div class="container">
-            <section>
-                <h2>Contact</h2>
-                <div class="contact-links">
-                    <a href="mailto:kbincase@gmail.com">kbincase@gmail.com</a>
-                    <a href="https://github.com/468910" target="_blank" rel="noopener noreferrer">GitHub</a>
-                </div>
-            </section>
-        </div>
+            </div>
+            
+            <div class="work-item">
+                <div class="work-title">Data synchronization layer</div>
+                <ul class="work-list">
+                    <li>Offline-first architecture with conflict resolution</li>
+                    <li>Eventual consistency model across 50K+ active clients</li>
+                    <li>Network partition handling with automatic recovery</li>
+                    <li>Data integrity verification via Merkle trees</li>
+                </ul>
+            </div>
+            
+            <div class="work-item">
+                <div class="work-title">Service gateway migration</div>
+                <ul class="work-list">
+                    <li>Monolith decomposition to 12 microservices</li>
+                    <li>Event-driven architecture with message queues</li>
+                    <li>Response time: 95th percentile from 800ms to 320ms</li>
+                    <li>Structured logging and distributed tracing implementation</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Principles</h2>
+            <ul class="principles-list">
+                <li>Code clarity over clever abstractions</li>
+                <li>Measure before optimizing</li>
+                <li>Design for failure modes</li>
+                <li>Document operational behavior</li>
+                <li>Automate repetitive tasks</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>Contact</h2>
+            <div class="contact-links">
+                <a href="mailto:kbincase@gmail.com">kbincase@gmail.com</a>
+                <a href="https://github.com/468910">github.com/468910</a>
+            </div>
+        </section>
     </div>
 </body>
 </html>
