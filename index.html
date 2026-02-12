@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Just-in-Kees - Independent iOS and Android mobile app development services in the Netherlands. Professional freelance mobile application developer.">
-    <title>Just-in-Kees - Mobile App Development</title>
+    <meta name="description" content="Kees - Independent software engineer based in Amsterdam. Designing robust product systems with focus on clarity, reliability, and long-term maintainability.">
+    <title>Kees - Independent Software Engineer</title>
     <style>
         * {
             margin: 0;
@@ -14,117 +14,155 @@
         
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f5f5f5;
+            line-height: 1.8;
+            color: #2a2a2a;
+            background-color: #f7f5f3;
+            font-size: 17px;
         }
         
         .container {
-            max-width: 800px;
+            max-width: 680px;
             margin: 0 auto;
-            padding: 40px 20px;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-        
-        .card {
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            padding: 50px 40px;
-            text-align: center;
+            padding: 80px 40px;
         }
         
         h1 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-            color: #2c3e50;
+            font-family: Georgia, 'Times New Roman', serif;
+            font-size: 3.5em;
+            font-weight: 400;
+            margin-bottom: 12px;
+            color: #1a1a1a;
+            letter-spacing: -0.02em;
         }
         
-        .tagline {
-            font-size: 1.2em;
-            color: #555;
-            margin-bottom: 40px;
-        }
-        
-        .info-section {
-            margin: 30px 0;
-            padding: 20px 0;
-            border-top: 1px solid #e0e0e0;
-        }
-        
-        .info-item {
-            margin: 15px 0;
+        .title {
             font-size: 1.1em;
+            color: #5a5a5a;
+            margin-bottom: 80px;
         }
         
-        .label {
-            font-weight: 600;
-            color: #2c3e50;
-            display: inline-block;
-            min-width: 100px;
+        section {
+            margin-bottom: 80px;
         }
         
-        .value {
-            color: #555;
+        h2 {
+            font-family: Georgia, 'Times New Roman', serif;
+            font-size: 1.5em;
+            font-weight: 400;
+            margin-bottom: 32px;
+            color: #1a1a1a;
+            letter-spacing: -0.01em;
+        }
+        
+        p {
+            margin-bottom: 24px;
+            color: #3a3a3a;
+        }
+        
+        .work-item {
+            margin-bottom: 48px;
+        }
+        
+        .work-item:last-child {
+            margin-bottom: 0;
+        }
+        
+        .work-title {
+            font-weight: 500;
+            margin-bottom: 8px;
+            color: #1a1a1a;
+        }
+        
+        .work-description {
+            color: #4a4a4a;
+            margin-bottom: 0;
         }
         
         a {
-            color: #3498db;
+            color: #6b5d52;
             text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-bottom-color 0.2s;
         }
         
         a:hover {
-            text-decoration: underline;
+            border-bottom-color: #6b5d52;
         }
         
         a:focus-visible {
-            outline: 2px solid #3498db;
+            outline: 2px solid #6b5d52;
             outline-offset: 2px;
         }
         
-        .footer {
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid #e0e0e0;
-            color: #888;
-            font-size: 0.9em;
+        .contact a {
+            display: inline-block;
+            margin-right: 32px;
         }
         
-        @media (max-width: 600px) {
-            h1 {
-                font-size: 2em;
+        @media (max-width: 768px) {
+            body {
+                font-size: 16px;
             }
             
-            .card {
-                padding: 30px 20px;
+            .container {
+                padding: 60px 24px;
+            }
+            
+            h1 {
+                font-size: 2.8em;
+            }
+            
+            section {
+                margin-bottom: 60px;
+            }
+            
+            .contact a {
+                display: block;
+                margin-bottom: 16px;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="card">
-            <h1>Just-in-Kees</h1>
-            <p class="tagline">Independent iOS &amp; Android app development</p>
+        <header>
+            <h1>Kees</h1>
+            <p class="title">Independent Software Engineer</p>
+        </header>
+        
+        <section>
+            <p>I design robust product systems with attention to positioning and distribution-aware architecture. My work emphasizes clarity, reliability, and long-term maintainability over short-term optimization.</p>
+        </section>
+        
+        <section>
+            <h2>Selected Work</h2>
             
-            <div class="info-section">
-                <div class="info-item">
-                    <span class="label">Email:</span>
-                    <span class="value"><a href="mailto:kbincase@gmail.com" aria-label="Contact email">kbincase@gmail.com</a></span>
-                </div>
-                <div class="info-item">
-                    <span class="label">Location:</span>
-                    <span class="value">Netherlands</span>
-                </div>
+            <div class="work-item">
+                <div class="work-title">Architecture modernization</div>
+                <div class="work-description">Restructured legacy systems for improved modularity and operational resilience. Migrated monolithic services to composable boundaries without disrupting production environments.</div>
             </div>
             
-            <div class="footer">
-                <p>&copy; 2026 Just-in-Kees. All rights reserved. | <a href="privacy.html">Privacy Policy</a></p>
+            <div class="work-item">
+                <div class="work-title">Real-time system design</div>
+                <div class="work-description">Built low-latency data pipelines with predictable failure modes. Designed event processing infrastructure prioritizing observability and graceful degradation.</div>
             </div>
-        </div>
+            
+            <div class="work-item">
+                <div class="work-title">Tooling and automation</div>
+                <div class="work-description">Developed internal platforms to reduce operational friction. Created deployment systems that improve team velocity while maintaining stability guarantees.</div>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Approach</h2>
+            <p>I value structure over flexibility, composition over inheritance, and calm execution over rapid iteration. Good systems conserve energy by making the right decisions easier than the wrong ones.</p>
+        </section>
+        
+        <section class="contact">
+            <h2>Contact</h2>
+            <a href="mailto:kbincase@gmail.com">kbincase@gmail.com</a>
+            <a href="https://github.com/468910">GitHub</a>
+        </section>
     </div>
 </body>
 </html>
