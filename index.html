@@ -15,57 +15,63 @@
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
             line-height: 1.8;
-            color: #EAEAEA;
-            background-color: #121212;
+            color: #E6E6E6;
+            background-color: #141414;
             font-size: 16px;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
         }
         
         .container {
-            max-width: 680px;
+            max-width: 620px;
             margin: 0 auto;
-            padding: 80px 32px;
+            padding: 96px 32px;
         }
         
         h1 {
             font-size: 2.5rem;
             font-weight: 600;
-            color: #EAEAEA;
+            color: #E6E6E6;
             margin-bottom: 8px;
             letter-spacing: -0.02em;
         }
         
         .title {
             font-size: 1.125rem;
-            color: #AAAAAA;
-            margin-bottom: 64px;
+            color: #A8A8A8;
+            margin-bottom: 16px;
             font-weight: 400;
+        }
+        
+        .focus-line {
+            font-size: 0.9375rem;
+            color: #888888;
+            margin-bottom: 80px;
+            font-style: italic;
         }
         
         .positioning {
             font-size: 1.125rem;
-            line-height: 1.75;
-            color: #EAEAEA;
-            margin-bottom: 80px;
-            max-width: 600px;
+            line-height: 1.8;
+            color: #E6E6E6;
+            margin-bottom: 96px;
         }
         
         section {
-            margin-bottom: 80px;
+            margin-bottom: 96px;
         }
         
         h2 {
             font-size: 0.875rem;
             font-weight: 600;
-            color: #EAEAEA;
-            margin-bottom: 32px;
+            color: #E6E6E6;
+            margin-bottom: 40px;
             text-transform: uppercase;
             letter-spacing: 0.05em;
         }
         
         .work-item {
-            margin-bottom: 48px;
+            margin-bottom: 56px;
         }
         
         .work-item:last-child {
@@ -75,14 +81,14 @@
         .work-title {
             font-size: 1.125rem;
             font-weight: 500;
-            color: #EAEAEA;
+            color: #E6E6E6;
             margin-bottom: 12px;
         }
         
         .work-description {
             font-size: 1rem;
-            line-height: 1.75;
-            color: #AAAAAA;
+            line-height: 1.8;
+            color: #A8A8A8;
         }
         
         .principles-list {
@@ -91,9 +97,9 @@
         
         .principles-list li {
             font-size: 1rem;
-            line-height: 1.75;
-            color: #AAAAAA;
-            margin-bottom: 24px;
+            line-height: 1.8;
+            color: #A8A8A8;
+            margin-bottom: 28px;
             padding-left: 24px;
             position: relative;
         }
@@ -102,7 +108,7 @@
             content: "—";
             position: absolute;
             left: 0;
-            color: #666666;
+            color: #555555;
         }
         
         .principles-list li:last-child {
@@ -116,22 +122,22 @@
         
         .contact-links a {
             font-size: 1rem;
-            color: #4A9B9B;
+            color: #1F6F6B;
             text-decoration: none;
         }
         
         .contact-links a:hover {
-            color: #5EAFAF;
+            color: #2A8985;
         }
         
         .contact-links a:focus-visible {
-            outline: 1px solid #4A9B9B;
+            outline: 1px solid #1F6F6B;
             outline-offset: 4px;
         }
         
         @media (max-width: 768px) {
             .container {
-                padding: 60px 24px;
+                padding: 72px 24px;
             }
             
             h1 {
@@ -139,15 +145,19 @@
             }
             
             .title {
-                margin-bottom: 48px;
+                margin-bottom: 12px;
+            }
+            
+            .focus-line {
+                margin-bottom: 64px;
             }
             
             .positioning {
-                margin-bottom: 64px;
+                margin-bottom: 80px;
             }
             
             section {
-                margin-bottom: 64px;
+                margin-bottom: 80px;
             }
         }
     </style>
@@ -156,9 +166,10 @@
     <div class="container">
         <h1>Kees Boekestijn</h1>
         <p class="title">Independent Software Engineer</p>
+        <p class="focus-line">Currently focused on distributed systems and operational architecture</p>
         
         <p class="positioning">
-            I build software systems that operate under constraint. Years spent on infrastructure, mobile platforms, and distributed architectures. Work focuses on technical clarity and operational durability.
+            I build software systems that operate under constraint. Work spans infrastructure, mobile platforms, and distributed architectures with focus on technical clarity and operational durability.
         </p>
         
         <section>
@@ -167,21 +178,21 @@
             <div class="work-item">
                 <div class="work-title">Cross-platform mobile infrastructure</div>
                 <div class="work-description">
-                    Designed build and deployment systems for iOS and Android applications serving 500K+ users. Reduced release cycle from 6 weeks to 2 weeks through automated testing and CI/CD pipeline optimization.
+                    Build and deployment systems for iOS and Android applications. Automated testing pipeline with staged release mechanics. Focus on reproducible builds and deployment confidence.
                 </div>
             </div>
             
             <div class="work-item">
-                <div class="work-title">Real-time data synchronization</div>
+                <div class="work-title">Offline-first synchronization</div>
                 <div class="work-description">
-                    Implemented offline-first sync architecture for mobile apps with conflict resolution. System handles network interruptions and maintains data consistency across distributed clients and backend services.
+                    Data sync architecture for mobile apps with conflict resolution and eventual consistency. Handles network partition and maintains state integrity across distributed clients.
                 </div>
             </div>
             
             <div class="work-item">
-                <div class="work-title">API gateway modernization</div>
+                <div class="work-title">Service gateway architecture</div>
                 <div class="work-description">
-                    Migrated monolithic REST services to event-driven microservices. Reduced average response time by 60% and improved system observability through structured logging and distributed tracing.
+                    Decomposition of monolithic REST services into event-driven components. Emphasis on observability through structured logging and request tracing.
                 </div>
             </div>
         </section>
@@ -189,9 +200,9 @@
         <section>
             <h2>Principles</h2>
             <ul class="principles-list">
-                <li>Favor simple architectures that can be understood and maintained by others</li>
-                <li>Optimize for operational clarity and debugging before performance</li>
-                <li>Build systems that degrade gracefully under load or failure</li>
+                <li>Simple architectures that others can understand and maintain</li>
+                <li>Operational clarity and debugging before optimization</li>
+                <li>Systems that degrade gracefully under failure</li>
             </ul>
         </section>
         
