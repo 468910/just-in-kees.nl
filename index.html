@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Just-in-Kees - Independent iOS and Android mobile app development services in the Netherlands. Professional freelance mobile application developer.">
-    <title>Just-in-Kees - Mobile App Development</title>
+    <meta name="description" content="Kees Boekestijn - Independent Software Engineer">
+    <title>Kees Boekestijn</title>
     <style>
         * {
             margin: 0;
@@ -13,118 +13,196 @@
         }
         
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f5f5f5;
+            font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.8;
+            color: #EAEAEA;
+            background-color: #121212;
+            font-size: 16px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
         }
         
         .container {
-            max-width: 800px;
+            max-width: 680px;
             margin: 0 auto;
-            padding: 40px 20px;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-        
-        .card {
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            padding: 50px 40px;
-            text-align: center;
+            padding: 80px 32px;
         }
         
         h1 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-            color: #2c3e50;
-        }
-        
-        .tagline {
-            font-size: 1.2em;
-            color: #555;
-            margin-bottom: 40px;
-        }
-        
-        .info-section {
-            margin: 30px 0;
-            padding: 20px 0;
-            border-top: 1px solid #e0e0e0;
-        }
-        
-        .info-item {
-            margin: 15px 0;
-            font-size: 1.1em;
-        }
-        
-        .label {
+            font-size: 2.5rem;
             font-weight: 600;
-            color: #2c3e50;
-            display: inline-block;
-            min-width: 100px;
+            color: #EAEAEA;
+            margin-bottom: 8px;
+            letter-spacing: -0.02em;
         }
         
-        .value {
-            color: #555;
+        .title {
+            font-size: 1.125rem;
+            color: #AAAAAA;
+            margin-bottom: 64px;
+            font-weight: 400;
         }
         
-        a {
-            color: #3498db;
+        .positioning {
+            font-size: 1.125rem;
+            line-height: 1.75;
+            color: #EAEAEA;
+            margin-bottom: 80px;
+            max-width: 600px;
+        }
+        
+        section {
+            margin-bottom: 80px;
+        }
+        
+        h2 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #EAEAEA;
+            margin-bottom: 32px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-size: 0.875rem;
+        }
+        
+        .work-item {
+            margin-bottom: 48px;
+        }
+        
+        .work-item:last-child {
+            margin-bottom: 0;
+        }
+        
+        .work-title {
+            font-size: 1.125rem;
+            font-weight: 500;
+            color: #EAEAEA;
+            margin-bottom: 12px;
+        }
+        
+        .work-description {
+            font-size: 1rem;
+            line-height: 1.75;
+            color: #AAAAAA;
+        }
+        
+        .principles-list {
+            list-style: none;
+        }
+        
+        .principles-list li {
+            font-size: 1rem;
+            line-height: 1.75;
+            color: #AAAAAA;
+            margin-bottom: 24px;
+            padding-left: 24px;
+            position: relative;
+        }
+        
+        .principles-list li:before {
+            content: "—";
+            position: absolute;
+            left: 0;
+            color: #666666;
+        }
+        
+        .principles-list li:last-child {
+            margin-bottom: 0;
+        }
+        
+        .contact-links {
+            display: flex;
+            gap: 32px;
+        }
+        
+        .contact-links a {
+            font-size: 1rem;
+            color: #4A9B9B;
             text-decoration: none;
         }
         
-        a:hover {
-            text-decoration: underline;
+        .contact-links a:hover {
+            color: #5EAFAF;
         }
         
-        a:focus-visible {
-            outline: 2px solid #3498db;
-            outline-offset: 2px;
+        .contact-links a:focus-visible {
+            outline: 1px solid #4A9B9B;
+            outline-offset: 4px;
         }
         
-        .footer {
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid #e0e0e0;
-            color: #888;
-            font-size: 0.9em;
-        }
-        
-        @media (max-width: 600px) {
-            h1 {
-                font-size: 2em;
+        @media (max-width: 768px) {
+            .container {
+                padding: 60px 24px;
             }
             
-            .card {
-                padding: 30px 20px;
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .title {
+                margin-bottom: 48px;
+            }
+            
+            .positioning {
+                margin-bottom: 64px;
+            }
+            
+            section {
+                margin-bottom: 64px;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="card">
-            <h1>Just-in-Kees</h1>
-            <p class="tagline">Independent iOS &amp; Android app development</p>
+        <h1>Kees Boekestijn</h1>
+        <p class="title">Independent Software Engineer</p>
+        
+        <p class="positioning">
+            I build software systems that operate under constraint. Years spent on infrastructure, mobile platforms, and distributed architectures. Work focuses on technical clarity and operational durability.
+        </p>
+        
+        <section>
+            <h2>Selected Work</h2>
             
-            <div class="info-section">
-                <div class="info-item">
-                    <span class="label">Email:</span>
-                    <span class="value"><a href="mailto:kbincase@gmail.com" aria-label="Contact email">kbincase@gmail.com</a></span>
-                </div>
-                <div class="info-item">
-                    <span class="label">Location:</span>
-                    <span class="value">Netherlands</span>
+            <div class="work-item">
+                <div class="work-title">Cross-platform mobile infrastructure</div>
+                <div class="work-description">
+                    Designed build and deployment systems for iOS and Android applications serving 500K+ users. Reduced release cycle from 6 weeks to 2 weeks through automated testing and CI/CD pipeline optimization.
                 </div>
             </div>
             
-            <div class="footer">
-                <p>&copy; 2026 Just-in-Kees. All rights reserved. | <a href="privacy.html">Privacy Policy</a></p>
+            <div class="work-item">
+                <div class="work-title">Real-time data synchronization</div>
+                <div class="work-description">
+                    Implemented offline-first sync architecture for mobile apps with conflict resolution. System handles network interruptions and maintains data consistency across distributed clients and backend services.
+                </div>
             </div>
-        </div>
+            
+            <div class="work-item">
+                <div class="work-title">API gateway modernization</div>
+                <div class="work-description">
+                    Migrated monolithic REST services to event-driven microservices. Reduced average response time by 60% and improved system observability through structured logging and distributed tracing.
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Principles</h2>
+            <ul class="principles-list">
+                <li>Favor simple architectures that can be understood and maintained by others</li>
+                <li>Optimize for operational clarity and debugging before performance</li>
+                <li>Build systems that degrade gracefully under load or failure</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>Contact</h2>
+            <div class="contact-links">
+                <a href="mailto:kbincase@gmail.com">kbincase@gmail.com</a>
+                <a href="https://github.com/468910" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+        </section>
     </div>
 </body>
 </html>
