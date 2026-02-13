@@ -1,130 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Privacy Policy for Just-in-Kees mobile applications - GDPR compliant privacy practices">
-    <title>Privacy Policy - Just-in-Kees</title>
+    <title>Privacy Policy - Just in Kees</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             line-height: 1.6;
-            color: #333;
-            background-color: #f5f5f5;
+            color: #E6E6E6;
+            background-color: #141414;
+            font-size: 15px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
         }
-        
+
         .container {
-            max-width: 800px;
+            max-width: 700px;
             margin: 0 auto;
-            padding: 40px 20px;
+            padding: 64px 32px;
         }
-        
-        .card {
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            padding: 50px 40px;
+
+        .header {
+            font-family: 'Courier New', 'Monaco', monospace;
+            font-size: 0.8125rem;
+            color: #A8A8A8;
+            margin-bottom: 48px;
+            line-height: 1.6;
         }
-        
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-            color: #2c3e50;
+
+        .header .name {
+            color: #E6E6E6;
+            font-weight: 500;
         }
-        
-        h2 {
-            font-size: 1.8em;
-            margin-top: 30px;
-            margin-bottom: 15px;
-            color: #2c3e50;
-            border-bottom: 2px solid #3498db;
-            padding-bottom: 10px;
-        }
-        
-        h3 {
-            font-size: 1.3em;
-            margin-top: 20px;
-            margin-bottom: 10px;
-            color: #34495e;
-        }
-        
-        p {
-            margin-bottom: 15px;
-            color: #555;
-        }
-        
-        ul {
-            margin: 10px 0 15px 30px;
-            color: #555;
-        }
-        
-        li {
-            margin-bottom: 8px;
-        }
-        
-        a {
-            color: #3498db;
+
+        .back-link {
+            font-family: 'Courier New', 'Monaco', monospace;
+            font-size: 0.8125rem;
+            color: #1F6F6B;
             text-decoration: none;
+            margin-bottom: 32px;
+            display: inline-block;
         }
-        
-        a:hover {
-            text-decoration: underline;
+
+        .back-link:hover {
+            color: #2A8985;
         }
-        
-        a:focus-visible {
-            outline: 2px solid #3498db;
+
+        .back-link:focus-visible {
+            outline: 1px solid #1F6F6B;
             outline-offset: 2px;
         }
-        
+
+        h1 {
+            font-family: 'Courier New', 'Monaco', monospace;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #E6E6E6;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
         .effective-date {
+            font-family: 'Courier New', 'Monaco', monospace;
+            font-size: 0.8125rem;
+            color: #A8A8A8;
+            margin-bottom: 48px;
             font-style: italic;
-            color: #888;
-            margin-bottom: 30px;
         }
-        
-        .footer {
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid #e0e0e0;
-            color: #888;
-            font-size: 0.9em;
-            text-align: center;
+
+        section {
+            padding: 32px 0;
+            border-top: 1px solid #1E1E1E;
         }
-        
+
+        section:first-of-type {
+            border-top: none;
+            padding-top: 0;
+        }
+
+        h2 {
+            font-family: 'Courier New', 'Monaco', monospace;
+            font-size: 0.8125rem;
+            font-weight: 600;
+            color: #E6E6E6;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        h3 {
+            font-family: 'Courier New', 'Monaco', monospace;
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: #E6E6E6;
+            margin-bottom: 12px;
+            margin-top: 24px;
+        }
+
+        p {
+            font-size: 0.9375rem;
+            line-height: 1.6;
+            color: #A8A8A8;
+            margin-bottom: 16px;
+        }
+
+        ul {
+            list-style: none;
+            margin-bottom: 16px;
+        }
+
+        li {
+            font-size: 0.9375rem;
+            line-height: 1.6;
+            color: #A8A8A8;
+            margin-bottom: 6px;
+            padding-left: 16px;
+            position: relative;
+        }
+
+        li:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #555555;
+        }
+
+        li:last-child {
+            margin-bottom: 0;
+        }
+
+        strong {
+            color: #E6E6E6;
+            font-weight: 600;
+        }
+
+        a {
+            color: #1F6F6B;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #2A8985;
+        }
+
+        a:focus-visible {
+            outline: 1px solid #1F6F6B;
+            outline-offset: 2px;
+        }
+
         .contact-box {
-            background-color: #f8f9fa;
-            border-left: 4px solid #3498db;
-            padding: 15px;
+            background-color: #1A1A1A;
+            border-left: 2px solid #1F6F6B;
+            padding: 20px;
             margin: 20px 0;
         }
-        
-        @media (max-width: 600px) {
-            h1 {
-                font-size: 2em;
+
+        .contact-box p {
+            margin-bottom: 8px;
+        }
+
+        .contact-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        .footer {
+            margin-top: 48px;
+            padding-top: 32px;
+            border-top: 1px solid #1E1E1E;
+            font-family: 'Courier New', 'Monaco', monospace;
+            font-size: 0.6875rem;
+            color: #A8A8A8;
+            text-align: center;
+        }
+
+        .footer a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            color: #1F6F6B;
+        }
+
+        .footer a:focus-visible {
+            outline: 1px solid #1F6F6B;
+            outline-offset: 2px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 48px 24px;
             }
-            
-            h2 {
-                font-size: 1.5em;
-            }
-            
-            .card {
-                padding: 30px 20px;
+
+            section {
+                padding: 24px 0;
             }
         }
     </style>
 </head>
+
 <body>
     <div class="container">
-        <div class="card">
-            <h1>Privacy Policy</h1>
-            <p class="effective-date">Effective Date: January 29, 2026</p>
-            
+        <a href="index.html" class="back-link">← Back to Home</a>
+
+        <h1>Privacy Policy</h1>
+        <p class="effective-date">Effective Date: January 29, 2026</p>
+
+        <section>
             <h2>1. Introduction</h2>
             <p>
                 Just-in-Kees ("we", "us", or "our") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile applications. We are an independent mobile app developer based in the Netherlands, and we comply with the General Data Protection Regulation (GDPR) and other applicable data protection laws.
@@ -132,12 +226,14 @@
             <p>
                 Please read this Privacy Policy carefully. If you do not agree with the terms of this Privacy Policy, please do not access our applications.
             </p>
+        </section>
 
+        <section>
             <h2>2. Data Collection</h2>
             <p>
                 We collect minimal information necessary to provide and improve our services. The types of data we may collect include:
             </p>
-            
+
             <h3>2.1 Analytics Data</h3>
             <ul>
                 <li>Device type and operating system version</li>
@@ -145,18 +241,20 @@
                 <li>General location data (country or region level only)</li>
                 <li>App performance metrics</li>
             </ul>
-            
+
             <h3>2.2 Crash Reports</h3>
             <ul>
                 <li>Technical information about app crashes</li>
                 <li>Device state at the time of crash</li>
                 <li>Stack traces and error logs</li>
             </ul>
-            
+
             <p>
                 We do not collect personally identifiable information such as names, email addresses, or precise location data unless explicitly provided by you for a specific feature or support request.
             </p>
+        </section>
 
+        <section>
             <h2>3. Data Usage</h2>
             <p>
                 We use the collected data for the following purposes:
@@ -170,7 +268,9 @@
             <p>
                 We do not sell, trade, or rent your personal data to third parties. We will never use your data for marketing purposes without your explicit consent.
             </p>
+        </section>
 
+        <section>
             <h2>4. Third-party Services</h2>
             <p>
                 Our applications may use third-party services for analytics and crash reporting. These services may collect information used to identify you. When our applications utilize third-party services, we will specify which services are used in the app-specific documentation or within the application itself.
@@ -185,7 +285,9 @@
             <p>
                 Each third-party service has its own privacy policy addressing how they use information. We carefully select service providers that comply with GDPR and maintain high data protection standards. You can find links to the privacy policies of specific third-party services within each application or by contacting us directly.
             </p>
+        </section>
 
+        <section>
             <h2>5. GDPR User Rights</h2>
             <p>
                 If you are a resident of the European Economic Area (EEA), you have certain data protection rights under GDPR. We aim to take reasonable steps to allow you to correct, amend, delete, or limit the use of your personal data.
@@ -205,7 +307,9 @@
             <p>
                 To exercise any of these rights, please contact us using the contact information provided below.
             </p>
+        </section>
 
+        <section>
             <h2>6. Data Retention</h2>
             <p>
                 We retain your data only for as long as necessary to fulfill the purposes outlined in this Privacy Policy, unless a longer retention period is required or permitted by law.
@@ -217,7 +321,9 @@
             <p>
                 After the retention period expires, we will delete or anonymize your personal data in accordance with applicable laws and regulations.
             </p>
+        </section>
 
+        <section>
             <h2>7. Security</h2>
             <p>
                 We implement appropriate technical and organizational security measures to protect your personal data against unauthorized or unlawful processing, accidental loss, destruction, or damage. These measures include:
@@ -231,12 +337,16 @@
             <p>
                 While we strive to protect your personal data, no method of transmission over the internet or electronic storage is 100% secure. We cannot guarantee absolute security but continuously work to improve our security measures.
             </p>
+        </section>
 
+        <section>
             <h2>8. Children's Privacy</h2>
             <p>
                 Our applications are not intended for children under the age of 16. We do not knowingly collect personal data from children under 16. If you are a parent or guardian and believe that your child has provided us with personal data, please contact us, and we will take steps to delete such information.
             </p>
+        </section>
 
+        <section>
             <h2>9. Changes to This Privacy Policy</h2>
             <p>
                 We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Effective Date" at the top of this Privacy Policy.
@@ -244,7 +354,9 @@
             <p>
                 You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.
             </p>
+        </section>
 
+        <section>
             <h2>10. Contact Information</h2>
             <p>
                 If you have any questions about this Privacy Policy, or if you wish to exercise your GDPR rights, please contact us:
@@ -257,11 +369,12 @@
             <p>
                 We will respond to your request within 30 days as required by GDPR.
             </p>
+        </section>
 
-            <div class="footer">
-                <p>&copy; 2026 Just-in-Kees. All rights reserved. | <a href="index.html">Home</a></p>
-            </div>
+        <div class="footer">
+            © 2026 Just in Kees · <a href="index.html">Home</a>
         </div>
     </div>
 </body>
+
 </html>
