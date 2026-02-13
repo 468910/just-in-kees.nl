@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Just-in-Kees - Independent iOS and Android mobile app development services in the Netherlands. Professional freelance mobile application developer.">
-    <title>Just-in-Kees - Mobile App Development</title>
+    <meta name="description" content="Just in Kees - Independent Systems Engineer">
+    <title>Just in Kees</title>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <style>
@@ -13,120 +14,256 @@
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             line-height: 1.6;
-            color: #333;
-            background-color: #f5f5f5;
+            color: #E6E6E6;
+            background-color: #141414;
+            font-size: 15px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
         }
-        
+
         .container {
-            max-width: 800px;
+            max-width: 700px;
             margin: 0 auto;
-            padding: 40px 20px;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            padding: 64px 32px;
         }
-        
-        .card {
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            padding: 50px 40px;
-            text-align: center;
+
+        .header {
+            font-family: 'Courier New', 'Monaco', monospace;
+            font-size: 0.8125rem;
+            color: #A8A8A8;
+            margin-bottom: 48px;
+            line-height: 1.6;
         }
-        
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-            color: #2c3e50;
+
+        .header .name {
+            color: #E6E6E6;
+            font-weight: 500;
         }
-        
-        .tagline {
-            font-size: 1.2em;
-            color: #555;
-            margin-bottom: 40px;
+
+        section {
+            padding: 32px 0;
+            border-top: 1px solid #1E1E1E;
         }
-        
-        .info-section {
-            margin: 30px 0;
-            padding: 20px 0;
-            border-top: 1px solid #e0e0e0;
+
+        section:first-of-type {
+            border-top: none;
+            padding-top: 0;
         }
-        
-        .info-item {
-            margin: 15px 0;
-            font-size: 1.1em;
-        }
-        
-        .label {
+
+        h2 {
+            font-family: 'Courier New', 'Monaco', monospace;
+            font-size: 0.8125rem;
             font-weight: 600;
-            color: #2c3e50;
-            display: inline-block;
-            min-width: 100px;
+            color: #E6E6E6;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
         }
-        
-        .value {
-            color: #555;
+
+        .now-list {
+            list-style: none;
         }
-        
-        a {
-            color: #3498db;
+
+        .now-list li {
+            font-size: 0.9375rem;
+            line-height: 1.6;
+            color: #A8A8A8;
+            margin-bottom: 12px;
+            padding-left: 16px;
+            position: relative;
+        }
+
+        .now-list li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #555555;
+        }
+
+        .now-list li:last-child {
+            margin-bottom: 0;
+        }
+
+        .work-item {
+            margin-bottom: 32px;
+        }
+
+        .work-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .work-title {
+            font-family: 'Courier New', 'Monaco', monospace;
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: #E6E6E6;
+            margin-bottom: 8px;
+        }
+
+        .work-list {
+            list-style: none;
+        }
+
+        .work-list li {
+            font-size: 0.9375rem;
+            line-height: 1.6;
+            color: #A8A8A8;
+            margin-bottom: 6px;
+            padding-left: 16px;
+            position: relative;
+        }
+
+        .work-list li:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #555555;
+        }
+
+        .work-list li:last-child {
+            margin-bottom: 0;
+        }
+
+        .work-list a {
+            color: inherit;
             text-decoration: none;
         }
-        
-        a:hover {
-            text-decoration: underline;
+
+        .work-list a:hover {
+            color: #1F6F6B;
         }
-        
-        a:focus-visible {
-            outline: 2px solid #3498db;
+
+        .work-list a:focus-visible {
+            outline: 1px solid #1F6F6B;
             outline-offset: 2px;
         }
-        
-        .footer {
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid #e0e0e0;
-            color: #888;
-            font-size: 0.9em;
+
+        .principles-list {
+            list-style: none;
         }
-        
-        @media (max-width: 600px) {
-            h1 {
-                font-size: 2em;
+
+        .principles-list li {
+            font-size: 0.9375rem;
+            line-height: 1.6;
+            color: #A8A8A8;
+            margin-bottom: 12px;
+            padding-left: 16px;
+            position: relative;
+        }
+
+        .principles-list li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #555555;
+        }
+
+        .principles-list li:last-child {
+            margin-bottom: 0;
+        }
+
+        .contact-links {
+            display: flex;
+            gap: 24px;
+            flex-wrap: wrap;
+        }
+
+        .contact-links a {
+            font-size: 0.9375rem;
+            color: #1F6F6B;
+            text-decoration: none;
+        }
+
+        .contact-links a:hover {
+            color: #2A8985;
+        }
+
+        .contact-links a:focus-visible {
+            outline: 1px solid #1F6F6B;
+            outline-offset: 2px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 48px 24px;
             }
-            
-            .card {
-                padding: 30px 20px;
+
+            .header {
+                margin-bottom: 36px;
+            }
+
+            section {
+                padding: 24px 0;
             }
         }
     </style>
 </head>
+
 <body>
     <div class="container">
-        <div class="card">
-            <h1>Just-in-Kees</h1>
-            <p class="tagline">Independent iOS &amp; Android app development</p>
-            
-            <div class="info-section">
-                <div class="info-item">
-                    <span class="label">Email:</span>
-                    <span class="value"><a href="mailto:kbincase@gmail.com" aria-label="Contact email">kbincase@gmail.com</a></span>
-                </div>
-                <div class="info-item">
-                    <span class="label">Location:</span>
-                    <span class="value">Netherlands</span>
-                </div>
-            </div>
-            
-            <div class="footer">
-                <p>&copy; 2026 Just-in-Kees. All rights reserved. | <a href="privacy.html">Privacy Policy</a></p>
-            </div>
+        <div class="header">
+            <div class="name">Just in Kees</div>
+            <div>Independent Systems Engineer</div>
         </div>
+
+        <section>
+            <h2>Now</h2>
+            <ul class="now-list">
+                <li>Independent mobile and full-stack development</li>
+                <li>AI-first workflows</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Work</h2>
+
+            <div class="work-item">
+                <div class="work-title">Mobile platform infrastructure</div>
+                <ul class="work-list">
+                    <li>iOS and Android AI build systems with automated testing</li>
+                </ul>
+            </div>
+
+            <div class="work-item">
+                <div class="work-title">Data synchronization layer</div>
+                <ul class="work-list">
+                    <li>Offline-first architecture with conflict resolution</li>
+                </ul>
+            </div>
+
+            <div class="work-item">
+                <div class="work-title">Kinder - Android</div>
+                <ul class="work-list">
+                    <li><a href="https://play.google.com/store/apps/details?id=global.kinder&hl=en" target="_blank"
+                            rel="noopener noreferrer">
+                                Refactor to Compose &amp; real-time API migration
+                        </a></li>
+                </ul>
+
+
+        </section>
+
+        <section>
+            <h2>Principles</h2>
+            <ul class="principles-list">
+                <li>Code clarity over clever abstractions</li>
+                <li>Measure before optimizing</li>
+                <li>Design for failure modes</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Contact</h2>
+            <div class="contact-links">
+                <a href="mailto:kbincase@gmail.com">kbincase@gmail.com</a>
+                <a href="https://github.com/468910" target="_blank" rel="noopener noreferrer">github.com/468910</a>
+            </div>
+        </section>
     </div>
 </body>
+
 </html>
